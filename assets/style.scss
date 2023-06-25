@@ -149,8 +149,10 @@ nav ul {
   display: flex;
 }
 .show {
+  padding-right: 22px;
   .tabs {
     background: $black-more-transparent;
+
   }
   color: $white;
   font-size: 14px;
@@ -417,13 +419,15 @@ footer {
 .main .btn.language.mobile{
   display: none !important;
 }
+
 @media screen and (max-width: 1240px) {
   .cards {
     width: 100%;
     overflow: scroll;
+    gap: 0;
 
     .card {
-      width: 30vw;
+      width: 300px;
     }
   }
 
@@ -450,9 +454,9 @@ footer {
     overflow: scroll;
 
     .card {
-      width: 30vw;
       box-shadow: 0 0 0 transparent;
       background: transparent;
+      width: 200px;
 
       p {
         display: none;
@@ -565,5 +569,10 @@ footer {
     }
   }
 
- 
+  .sect,
+footer {
+  display: flex;
+  flex-direction: column;
+  padding-inline: $gap-s;
+}
 }

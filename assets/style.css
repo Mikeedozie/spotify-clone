@@ -171,6 +171,7 @@ nav ul {
 }
 
 .show {
+  padding-right: 22px;
   color: #fff;
   font-size: 14px;
 }
@@ -506,9 +507,10 @@ footer p {
   .cards {
     width: 100%;
     overflow: scroll;
+    gap: 0;
   }
   .cards .card {
-    width: 30vw;
+    width: 300px;
   }
   .main .btn.language.mobile {
     margin-top: 0;
@@ -535,10 +537,10 @@ footer p {
     overflow: scroll;
   }
   .cards .card {
-    width: 30vw;
     -webkit-box-shadow: 0 0 0 transparent;
             box-shadow: 0 0 0 transparent;
     background: transparent;
+    width: 200px;
   }
   .cards .card p {
     display: none;
@@ -658,6 +660,17 @@ footer p {
     opacity: 1;
     -webkit-transition: all 500ms ease-in 500ms;
     transition: all 500ms ease-in 500ms;
+  }
+  .sect,
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-inline: 0.5rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
